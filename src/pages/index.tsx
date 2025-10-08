@@ -4,8 +4,8 @@
 import ReactLenis from "lenis/react";
 import Header from "../components/layout/Header";
 import { DraggableCardDemo } from "@/components/hot-news/NewsCard";
-import HeroSection from "@/components/SmoothScroll/HeroSection";
 import { Home } from "@/components/SmoothScroll/Home";
+import { HeroSection } from "@/components/SmoothScroll/HeroSection";
 
 // ========================
 export const SmoothScrollHero = () => {

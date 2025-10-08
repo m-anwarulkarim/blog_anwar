@@ -8,19 +8,19 @@ import {
 export const CenterImage = () => {
   const { scrollY } = useScroll();
 
-  const clip1 = useTransform(scrollY, [0, 2300], [25, 0]);
-  const clip2 = useTransform(scrollY, [0, 2300], [75, 100]);
+  const clip1 = useTransform(scrollY, [0, 3000], [25, 0]);
+  const clip2 = useTransform(scrollY, [0, 3000], [75, 100]);
   const clipPath = useMotionTemplate`polygon(${clip1}% ${clip1}%, ${clip2}% ${clip1}%, ${clip2}% ${clip2}%, ${clip1}% ${clip2}%)`;
 
-  const SECTION_HEIGHT = 2300;
+  const SECTION_HEIGHT = 3000;
   const backgroundSize = useTransform(
     scrollY,
-    [0, SECTION_HEIGHT + 700],
+    [0, SECTION_HEIGHT + 1000],
     ["190%", "100%"]
   );
   const opacity = useTransform(
     scrollY,
-    [SECTION_HEIGHT, SECTION_HEIGHT + 700],
+    [SECTION_HEIGHT, SECTION_HEIGHT + 1000],
     [1, 0]
   );
 
