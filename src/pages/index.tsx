@@ -2,15 +2,17 @@
 // ✅ Smooth Scroll Hero
 
 import ReactLenis from "lenis/react";
-import { Hero } from "../components/SmoothScroll/Hero";
 import Header from "../components/layout/Header";
 import { DraggableCardDemo } from "@/components/hot-news/NewsCard";
+import HeroSection from "@/components/SmoothScroll/HeroSection";
+import { Home } from "@/components/SmoothScroll/Home";
 
 // ========================
 export const SmoothScrollHero = () => {
   return (
     <>
       <Header />
+      <HeroSection />
       <div className="bg-zinc-950">
         <ReactLenis
           root
@@ -20,7 +22,7 @@ export const SmoothScrollHero = () => {
             // syncTouch: true,
           }}
         >
-          <Hero />
+          <Home />
           <DraggableCardDemo />
         </ReactLenis>
       </div>

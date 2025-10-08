@@ -3,7 +3,7 @@ import { ParallaxImages } from "./ParallaxImages";
 
 const SECTION_HEIGHT = 2100;
 
-export const Hero = () => {
+export const Home = () => {
   return (
     <div
       style={{ height: `calc(${SECTION_HEIGHT}px + 100vh)` }}
