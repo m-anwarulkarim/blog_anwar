@@ -3,6 +3,19 @@ import { motion } from "framer-motion";
 export default function HeroSection() {
   return (
     <section className="flex flex-col md:flex-row items-center justify-between px-6 md:px-20 py-16 bg-gradient-to-br from-blue-50 to-white dark:from-gray-900 dark:to-gray-800 pb-5 h-screen">
+      {/* Image Section */}
+      <motion.div
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+        className="md:w-1/2 mt-10 md:mt-0"
+      >
+        <img
+          src="./images/benner.jpg"
+          alt="Educational Illustration"
+          className="w-full max-w-md mx-auto rounded-xl shadow-lg"
+        />
+      </motion.div>
       {/* Text Section */}
       <motion.div
         initial={{ opacity: 0, x: -50 }}
@@ -26,20 +39,6 @@ export default function HeroSection() {
         <button className="px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition">
           scroll to know more
         </button>
-      </motion.div>
-
-      {/* Image Section */}
-      <motion.div
-        initial={{ opacity: 0, x: 50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1 }}
-        className="md:w-1/2 mt-10 md:mt-0"
-      >
-        <img
-          src="./images/benner.jpg"
-          alt="Educational Illustration"
-          className="w-full max-w-md mx-auto rounded-xl shadow-lg"
-        />
       </motion.div>
     </section>
   );
