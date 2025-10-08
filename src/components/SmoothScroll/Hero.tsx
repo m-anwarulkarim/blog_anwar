@@ -1,7 +1,7 @@
 import { CenterImage } from "./CenterImage";
 import { ParallaxImages } from "./ParallaxImages";
 
-const SECTION_HEIGHT = 1500;
+const SECTION_HEIGHT = 2100;
 
 export const Hero = () => {
   return (

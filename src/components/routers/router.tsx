@@ -1,16 +1,18 @@
 import { createBrowserRouter } from "react-router";
 import MainLayout from "../layout/MainLayout";
-import { SmoothScrollHero } from "../home";
+
+import { SmoothScrollHero } from "../../pages";
 
 export const router = createBrowserRouter([
   {
     path: "/",
-    Component: SmoothScrollHero,
+    Component: MainLayout,
     children: [
-      // {
-      //   index: true,
-      //   Component: SmoothScrollHero,
-      // },
+      {
+        index: true,
+        Component: SmoothScrollHero,
+      },
+      {},
     ],
   },
 ]);
