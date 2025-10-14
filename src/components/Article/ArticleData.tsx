@@ -2,7 +2,7 @@ export const ArticleData = [
   {
     id: 1,
     title: "গাজা সেক্টরের মানবিক সংকট",
-    image: "https://images.unsplash.com/photo-1601553562403-b18f7f0d4309",
+    image: "./images/palestine-2.jpg",
     description:
       "গাজায় চলমান সংঘাতের কারণে সাধারণ মানুষের জীবন এবং নিরাপত্তা বিপন্ন।",
     link: "/articles/gaza-crisis",
@@ -10,14 +10,14 @@ export const ArticleData = [
   {
     id: 2,
     title: "পালেস্টিনের শিশুদের শিক্ষা সমস্যা",
-    image: "https://images.unsplash.com/photo-1598300050967-35f8a8f8fabc",
+    image: "./images/palestine-2.jpg",
     description: "সংঘাতপূর্ণ অঞ্চলে শিশুদের শিক্ষা ও মানসিক স্বাস্থ্য বিপন্ন।",
     link: "/articles/education-issues",
   },
   {
     id: 3,
     title: "পালেস্টিনের পানির সংকট",
-    image: "https://images.unsplash.com/photo-1613150291307-1f8d4d2f5f5a",
+    image: "./images/palestine-2.jpg",
     description: "পরিষ্কার পানির অভাবে দৈনন্দিন জীবন ও স্বাস্থ্য বিপন্ন।",
     link: "/articles/water-crisis",
   },

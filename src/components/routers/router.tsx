@@ -5,7 +5,7 @@ import { SmoothScrollHero } from "../../pages";
 import AboutUs from "../about us/AboutUs";
 import ContactUs from "../contact us/ContactUs";
 import Error from "@/pages/Error";
-import ArticlePage from "../Article/ArticlePage";
+import ArticlePage from "../Article";
 
 export const router = createBrowserRouter([
   {
@@ -26,7 +26,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/articles/:slug",
-        Component: ArticlePage, // ✅ সঠিক
+        Component: ArticlePage,
       },
       {
         path: "/*",

@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router"; // ✅ useNavigate
+import { useNavigate } from "react-router";
 
 interface CardItemProps {
   title: string;
@@ -15,7 +15,7 @@ export const ArticleItem: React.FC<CardItemProps> = ({
   description,
   link,
 }) => {
-  const navigate = useNavigate(); // ✅ useNavigate
+  const navigate = useNavigate();
 
   const handleClick = () => {
     navigate(link); // v6 এ navigate()
