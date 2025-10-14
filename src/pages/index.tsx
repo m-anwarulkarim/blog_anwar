@@ -6,6 +6,7 @@ import Header from "../components/layout/Header";
 import { DraggableCardDemo } from "@/components/hot-news/NewsCard";
 import { Home } from "@/components/SmoothScroll/Home";
 import { HeroSection } from "@/components/SmoothScroll/HeroSection";
+import { ArticleGrid } from "@/components/Article/ArticleGrid";
 
 // ========================
 export const SmoothScrollHero = () => {
@@ -25,6 +26,7 @@ export const SmoothScrollHero = () => {
           <Home />
           <DraggableCardDemo />
         </ReactLenis>
+        <ArticleGrid />
       </div>
     </>
   );
